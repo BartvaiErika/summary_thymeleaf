@@ -1,0 +1,25 @@
+Templating - Thymeleaf 
+
+Thymeleaf is a modern server-side Java template engine for web or standalone environments, whichis capable of processing HTML, XML, JavaScript, CSS and even plain text. 
+
+Thymeleaf can be integrated into Spring Framework and for this I need to add thymeleaf dependencies to the Maven POM file. 
+ 
+The HTML, XML, JavaScript, CSS are in the templates in the resources. 
+
+The java code is structured according to MVC prinzip. In model part are the data objects included. The data object are created by using lombok. 
+
+The controller part use @Controller of Springframework, RequestMapping to enable to navigation to the corresponding side.
+
+For thymeleaf loops we use @ModelAttribute including a corresponding Stringexpression (e.g. @ModelAttribute("message"), which will be used after the url). 
+
+We run the tymeleafApplication as @SpringBootApplication. 
+
+References:
+https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html 
+https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html
+https://www.baeldung.com/thymeleaf-in-spring-mvc 
+https://github.com/newaustriancodingschool/i4-backend/tree/master/example/templating/thymeleaf 
+https://github.com/newaustriancodingschool/i4-backend/tree/master/example/templating/thymeleaf-fragments 
+
+
+
